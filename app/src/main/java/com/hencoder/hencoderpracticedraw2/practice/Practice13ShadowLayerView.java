@@ -4,8 +4,11 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.hencoder.hencoderpracticedraw2.R;
 
 public class Practice13ShadowLayerView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -31,6 +34,7 @@ public class Practice13ShadowLayerView extends View {
         super.onDraw(canvas);
 
         paint.setTextSize(120);
+        paint.setShadowLayer(20, 10, 10, ContextCompat.getColor(getContext(), R.color.aya_red));
         canvas.drawText("Hello HenCoder", 50, 200, paint);
     }
 }
