@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="aya_red">#EE0000</color>
+    <color name="tianyi_bule">#66CCFF</color>
+
 </resources>
